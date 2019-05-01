@@ -1,15 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { Security } from '@okta/okta-react';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Security } from "@okta/okta-react";
 
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import App from "./App";
+import registerServiceWorker from "./registerServiceWorker";
 
 const oktaConfig = {
-  issuer: `${process.env.REACT_APP_OKTA_ORG_URL}/oauth2/default`,
+  issuer: `https://dev-538082.okta.com/oauth2/default`,
   redirect_uri: `${window.location.origin}/implicit/callback`,
-  client_id: process.env.REACT_APP_OKTA_CLIENT_ID,
+  client_id: "0oaixz7zkKjgt7eip356"
 };
 
 ReactDOM.render(
@@ -18,7 +18,7 @@ ReactDOM.render(
       <App />
     </Security>
   </BrowserRouter>,
-  document.getElementById('root'),
+  document.getElementById("root")
 );
 registerServiceWorker();
 
