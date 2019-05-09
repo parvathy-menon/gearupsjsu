@@ -26,6 +26,7 @@ const AppHeader = ({ classes }) => (
       {/* <Button color="inherit" component={Link} to="/posts">Posts Manager</Button> */}
       <div className={classes.flex} />
       <LoginButton />
+      <Button color="inherit" component={Link} to="">Log In with Facebook</Button>
       <Typography variant="title" color="inherit">
         Gear Up
       </Typography>
