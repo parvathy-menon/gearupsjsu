@@ -1,0 +1,232 @@
+/* -----------Common---------- */
+.App {
+    height: 100vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    grid-area: heading;
+    color: #feaaaa;
+    font-size: 2em;
+}
+
+.button {
+    background-color: #fd0066;
+    color: #fff;
+    font-size: 0.7em;
+    border-radius: 5px;
+    border-color: #fff;
+    width: 100%;
+    height: 3vh;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    grid-area: table;
+    font-size: 1em;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 15px;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #feaaaa;
+  }
+  table tr:nth-child(odd) {
+   background-color: white;
+  }
+  table th {
+    background-color: #fd0066;
+    color: white;
+  }
+
+.table-heading{
+    background-color: #feaaaa;
+}
+
+/* ------------Home----------- */
+
+.home-grid {
+    display: grid;
+    grid-template-rows: 40vh 5vh 35vh 5vh 5vh;
+    grid-template-areas:
+      'home-first-part'
+      '.'
+      'team'
+      '.'
+      'copyright';
+    background-color: white;
+    width: 100%;
+  }
+
+.home-first-part {
+    grid-area: home-first-part;
+    height: 40vh;
+}
+
+.team {
+    grid-area: team;
+    height: 35vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 5vh 1vh auto 1vh;
+    grid-template-areas:
+      'team-heading'
+      '.'
+      'team-body'
+      '.';
+    background-color: white;
+    width: 100%;
+}
+
+.copyright {
+    grid-area: copyright;
+    height: 5vh;
+    background-color: #feaaaa;
+    text-align: center;
+}
+
+.background {
+    background-image: url(images/photographer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4%;
+    height: 40vh;
+}
+
+.logo {
+    color: #fd0066;
+    font-style: bold;
+    text-align: center;
+    font-size: 5em;
+    padding-top: 2%;
+}
+
+.team-heading {
+    grid-area: team-heading;
+    text-align: center;
+    color: #fd0066;
+    font-size: 1.5em;
+}
+
+.team-body{
+    grid-area: team-body;
+    display: grid;
+    grid-template-rows: 1vh auto 1vh;
+    grid-template-columns: 1% 20% 1% auto;
+    grid-template-areas: 
+        '. . . .'
+        '. tm-1 . tm-2'
+        '. . . .';
+    width: 100%;
+  }
+
+.tm-1 {
+    grid-area: tm-1;
+    background-image: url(images/gym.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.tm-2 {
+    grid-area: tm-2;
+    background-color: #feaaaa;
+    font-size: 1.7em;
+    font-family: Courier New, Courier, monospace;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* --------Login Home--------- */
+.login-home-grid {
+    display: grid;
+    grid-template-rows: 10vh auto;
+    grid-template-areas:
+      'heading'
+      'table';
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* ---------Add Class--------- */
+  .addclass-grid {
+    display: grid;
+    grid-template-rows: 10vh 10vh 5vh auto;
+    grid-template-areas:
+      'heading'
+      'class-search'
+      '.'
+      'table';
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .class-search {
+    grid-area: class-search;
+    width: 100%;
+}
+
+
+.search-tb
+{
+    display: table;
+    width: 100%;
+}
+
+.search-td
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input, button
+{
+    color: #fff;
+    background-color: transparent;
+}
+
+#cover
+{
+    height: 7vh;
+    background-color: #feaaaa;
+    border-color: black;
+    border-color: #fff;
+    border-radius: 5px;
+}
+
+input[type="text"]
+{
+    height: 7vh;
+    width: 100%;
+    font-size: 2em;
+    border-color: #fff;
+    border-radius: 5px;
+    line-height: 1;
+
+}
+
+/* ---------Drop Class--------- */
+  .dropclass-grid {
+    display: grid;
+    grid-template-rows: 10vh 5vh auto;
+    grid-template-areas:
+      'heading'
+      '.'
+      'table';
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+  }
+  
+/* ----------Profile----------- */
+

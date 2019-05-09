@@ -9,6 +9,10 @@ import {
 import AppHeader from './components/AppHeader';
 import Home from './pages/Home';
 import PostsManager from './pages/PostsManager';
+import LoginHome from './pages/LoginHome';
+import AddClass from './pages/AddClass';
+import DropClass from './pages/DropClass';
+import Profile from './pages/Profile';
 
 const styles = theme => ({
   main: {
@@ -25,6 +29,10 @@ const App = ({ classes }) => (
     <AppHeader />
     <main className={classes.main}>
       <Route exact path="/" component={Home} />
+      <Route exact path="/loginhome" component={LoginHome} />
+      <Route exact path="/addclass" component={AddClass} />
+      <Route exact path="/dropclass" component={DropClass} />
+      <Route exact path="/profile" component={Profile} />
       <SecureRoute exact path="/posts" component={PostsManager} />
       <Route path="/implicit/callback" component={ImplicitCallback} />
     </main>

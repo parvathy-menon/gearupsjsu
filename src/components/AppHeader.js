@@ -17,15 +17,18 @@ const styles = {
 };
 
 const AppHeader = ({ classes }) => (
-  <AppBar position="static">
+  <AppBar position="static" color="secondary">
     <Toolbar>
-      <Typography variant="title" color="inherit">
-        My React App
-      </Typography>
-      <Button color="inherit" component={Link} to="/">Home</Button>
-      <Button color="inherit" component={Link} to="/posts">Posts Manager</Button>
+      <Button color="inherit" component={Link} to="/loginhome">Home</Button>
+      <Button color="inherit" component={Link} to="/addclass">Add Class</Button>
+      <Button color="inherit" component={Link} to="/dropclass">Drop Class</Button>
+      <Button color="inherit" component={Link} to="/profile">Profile</Button>
+      {/* <Button color="inherit" component={Link} to="/posts">Posts Manager</Button> */}
       <div className={classes.flex} />
       <LoginButton />
+      <Typography variant="title" color="inherit">
+        Gear Up
+      </Typography>
     </Toolbar>
   </AppBar>
 );
