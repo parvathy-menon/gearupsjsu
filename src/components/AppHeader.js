@@ -34,12 +34,9 @@ const AppHeader = ({ classes }) => (
       {/* <Button color="inherit" component={Link} to="/posts">Posts Manager</Button> */}
       <div className={classes.flex} />
       <LoginButton />
-      <Button
-        color="inherit"
-        onclick="https://dev-538082.okta.com/oauth2/v1/authorize?idp=0oakfh9azKLvfTstn356&client_id=0oaixz7zkKjgt7eip356&response_type=id_token&response_mode=fragment&scope=openid&redirect_uri=https%3A%2F%2Fsjsugearup.herokuapp.com%2Fimplicit%2Fcallback&state=WM6D&nonce=YsG76jo"
-      >
-        Log In with Facebook
-      </Button>
+      <form action="https://dev-538082.okta.com/oauth2/v1/authorize?idp=0oakfh9azKLvfTstn356&client_id=0oaixz7zkKjgt7eip356&response_type=id_token&response_mode=fragment&scope=openid&redirect_uri=https%3A%2F%2Fsjsugearup.herokuapp.com%2Fimplicit%2Fcallback&state=WM6D&nonce=YsG76jo">
+        <button type="submit">Login with Facebook</button>
+      </form>
       <Typography variant="title" color="inherit">
         Gear Up
       </Typography>
