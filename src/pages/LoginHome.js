@@ -19,26 +19,34 @@ export default class LoginHome extends React.Component {
                             <th>Contact</th> 
                         </tr>
                         <tr>
-                            <td>Jill</td>
-                            <td>Smith</td>
+                            <td>Yoga</td>
+                            <td>Jill Smith</td>
                             <td>50</td>
-                            <td></td>
-                            <td></td>
+                            <td>MW 09:00 - 10:00</td>
+                            <td>jill.smith@gearup.com</td>
                         </tr>
                         <tr>
-                            <td>Eve</td>
-                            <td>Jackson</td>
-                            <td>94</td>
-                            <td></td>
-                            <td></td>
+                            <td>Yoga</td>
+                            <td>Kevin Tracy</td>
+                            <td>50</td>
+                            <td>TR 14:00 - 15:00</td>
+                            <td>kevin.tracy@gearup.com</td>
                         </tr>
                         <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>80</td>
-                            <td></td>
-                            <td></td>
+                            <td>Aerobics</td>
+                            <td>Carl Henson</td>
+                            <td>30</td>
+                            <td>TR 10:00 - 11:00</td>
+                            <td>carl.henson@gearup.com</td>
                         </tr>
+                        <tr>
+                            <td>Pilates</td>
+                            <td>Janiah Bullock</td>
+                            <td>30</td>
+                            <td>FR 11:00 - 13:00</td>
+                            <td>janiah.bullock@gearup.com</td>
+                        </tr>
+                        
                     </table>
                 </div>
             </div>
