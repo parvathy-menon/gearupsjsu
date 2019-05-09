@@ -5,7 +5,7 @@ export default class LoginHome extends React.Component {
     render() {
       return (
         <div className="App">
-            <div className="home-grid">
+            <div className="login-home-grid">
                 <div className="heading">
                     Your classes
                 </div>
